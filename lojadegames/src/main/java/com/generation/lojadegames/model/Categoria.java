@@ -54,5 +54,13 @@ public class Categoria {
 	public void setPrateleiraLoja(String prateleiraLoja) {
 		this.prateleiraLoja = prateleiraLoja;
 	}
+
+	public List<Produto> getProduto() {
+		return produto;
+	}
+
+	public void setProduto(List<Produto> produto) {
+		this.produto = produto;
+	}
 	
 }
