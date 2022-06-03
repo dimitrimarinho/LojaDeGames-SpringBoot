@@ -39,7 +39,7 @@ public class CategoriaController {
 		return ResponseEntity.ok(repository.findAll());
 	}
 	
-	@GetMapping("/{id}")
+	@GetMapping("/{id_categoria}")
 	public ResponseEntity<Categoria> GetById(@PathVariable Long id_categoria){
 		return repository.findById(id_categoria)
 				.map(resp -> ResponseEntity.ok(resp))
